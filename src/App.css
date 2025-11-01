@@ -1,38 +1,160 @@
-.App {
-  text-align: center;
+/* Import fonts in index.html:
+<link href="https://fonts.googleapis.com/css2?family=Nunito&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+*/
+
+body {
+  font-family: 'Nunito', sans-serif;
+  background-color: #e6f2ff;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.page-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  color: #222;
+  text-align: center;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto 40px auto;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+/* Headings */
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Role Label */
+.role-label {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+/* Welcome Message */
+.welcome-msg {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+/* Logged-in Label */
+.logged-in-label {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  color: #007bff;
+  background-color: #e0f0ff;
+  padding: 10px;
+  border-radius: 6px;
+  font-weight: 500;
+  box-shadow: 0 0 5px rgba(0,0,0,0.05);
+}
+
+/* Buttons */
+button {
+  font-family: 'Nunito', sans-serif;
+  padding: 10px 20px;
+  margin: 8px;
+  background-color: #007bff;
   color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  background-color: #0056b3;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.logout-btn {
+  background-color: #dc3545;
+}
+
+.logout-btn:hover {
+  background-color: #a71d2a;
+}
+
+/* Login Form */
+.login-form {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.login-form input {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: 'Nunito', sans-serif;
+}
+
+.login-form button {
+  width: 100%;
+}
+
+/* Teacher Status Form */
+.status-form {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+
+.status-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+/* Student Dashboard */
+.dashboard {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.dashboard p {
+  margin: 6px 0;
+  font-size: 1rem;
+}
+
+/* Status Colors */
+.status-present {
+  color: green;
+  font-weight: bold;
+}
+
+.status-absent {
+  color: red;
+  font-weight: bold;
 }
